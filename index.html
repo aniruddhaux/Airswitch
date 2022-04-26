@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="robots" content="index, follow" >
+<meta content="" name="keywords">
+<meta name="description" content="">
+
+<title>Airswitch - Home</title>
+<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+
+<!--Main site css-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/media_query.css" rel="stylesheet" type="text/css" />
+
+<!--library js-->
+<script src="jsLibrary/jquery-1.9.1.js"></script>
+<script src="jsLibrary/jquery.min.js"></script>
+
+<!--main product slider css & js-->
+<link rel="stylesheet" href="flexSlider/flexslider.css" type="text/css" media="screen" />
+
+
+<!-- Light box Add jQuery library -->
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancy_box/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancy_box/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancy_box/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancy_box/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancy_box/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancy_box/jquery.fancybox-media.js?v=1.0.6"></script>
+    
+    <script type="text/javascript" src="fancy_box/fancyBox.js"></script>
+
+<script>
+ $(document).ready(function(){
+
+	$(".dropArrow").click(function() {
+		$('html, body').animate({
+			scrollTop: $(".conatctFrm_sec").offset().top
+		}, 500);
+	}); 
+	$(".down").click(function() {
+		$('html, body').animate({
+			scrollTop: $(".conatctFrm_sec").offset().top
+		}, 1500);
+	}); 
+	$(".top").click(function() {
+		$('html, body').animate({
+			scrollTop: $(".logo").offset().top
+		}, 1500);
+	}); 
+	
+	/// for scroll btn
+	var offset = $(document).height()-100;
+	$back_to_top = $('.dropArrow2');
+
+	$(window).scroll(function(){
+		( $(this).scrollTop() < offset ) ? $('.down').show() : $('.down').hide();
+		( $(this).scrollTop() > offset ) ? $('.top').show() : $('.top').hide();
+	});
+	
+	
+	
+});
+</script>  
+</head>
+
+<body>
+    <div class="dropArrow2 down"></div> 
+    <div class="dropArrow2 top"></div> 
+    <header>
+        <div class="logo">
+        	<img src="images/airswitch_Logo_mask.png" alt="" />
+        	<span class="logoIcon"><img src="images/airswitch_Logo.png" alt="" /></span>
+        </div>    
+       
+        <!--Banner start here-->
+        <div class="banner">
+        	<div class="dropArrow"><a href="#"><img src="images/dropDown.png" alt="" /></a></div> 
+            <div class="bannerBox">   
+                  <div class="sliderRight">
+                  <a href="#" class="caption"><h2>Fitness Health</h2></a>
+                  <div class="flexslider" id="flexslider">
+                    <ul class="slides">
+                        <li><a href="#"><img src="images/Fitness_health.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/Fitness_health2.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/Fitness_health3.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/Fitness_health4.jpg" alt="" /></a></li>
+                      </ul>
+                  </div><!--end flexslider--> 
+                  </div> 
+                  
+                  <div class="sliderLeft">
+                  	  <a href="#" class="caption"><h2>Kitesurfing</h2></a>
+                      <div class="flexslider" id="flexslider2">
+                        <ul class="slides">
+                            <li><a href="#"><img src="images/kitesurfing.jpg" alt="" /></a>
+                            <li><a href="#"><img src="images/kitesurfing2.jpg" alt="" /></a>
+                            <li><a href="#"><img src="images/kitesurfing3.jpg" alt="" /></a>
+                            <li><a href="#"><img src="images/kitesurfing4.jpg" alt="" /></a>
+                          </ul>
+                      </div><!--end flexslider-->
+                  </div>
+                  
+            </div>   
+         </div><!--end banner-->
+         
+    </header>
+           
+    <div class="content">
+       <div class="conatctFrm_sec">
+		   <div class="wrapper">
+                <h3>Contact <span>Us</span></h3>
+                <form action="" method="get">
+                      <div class="row">
+                          <input type="text" value="" placeholder="Name..." onBlur="this.placeholder=!this.placeholder?'Name... ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here">
+                          <input type="text" value="" placeholder="Email-id..." onBlur="this.placeholder=!this.placeholder?'Email-id... ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here">
+                          <input class="last" type="text" value="" placeholder="Phone Number..." onBlur="this.placeholder=!this.placeholder?'Phone Number... ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here">
+                      </div>
+                      <textarea value="" placeholder="Massege..." onBlur="this.placeholder=!this.placeholder?'Massege... ':this.placeholder;" onFocus="this.select()" onClick="this.placeholder='';" name="field-name-here"></textarea>
+                      <input type="submit" value="Submit" />
+                 </form>
+			</div>
+	   </div><!--conatctFrm_sec end--> 
+       
+      
+
+    </div><!--content end-->
+     
+    <!--Footer start-->   
+    <footer id="btm">
+		   <div class="wrapper">
+			   <p>Copyright 2016. All Right Reserved</p>   
+		   </div>
+    </footer>
+
+
+<script type="text/javascript" src="responsive_menu/js/jquery.meanmenu.js"></script>
+<script>
+jQuery(document).ready(function() {
+    jQuery('.mean-container nav').meanmenu();
+});
+</script>
+
+
+
+  <!-- FlexSlider -->
+  <script defer src="flexSlider/jquery.flexslider.js"></script>
+  <script type="text/javascript" src="flexSlider/shCore.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(document).ready(function(){
+      $('#flexslider').flexslider({
+        animation: "slide",
+		slideshow: true,
+		slideshowSpeed: 3500, 
+		 animationSpeed: 800, 
+        //start: function(slider){
+        //  $('body').removeClass('loading');
+        //}
+      });
+	  
+	  $('#flexslider2').flexslider({
+        animation: "slide",
+		slideshow: true,
+		slideshowSpeed: 3000, 
+		 animationSpeed: 800, 
+        //start: function(slider){
+        //  $('body').removeClass('loading');
+        //}
+      });
+	  
+ 
+//////////////////////
+
+	  
+	  
+	  
+    });
+  </script>
+
+</body>
+</html>

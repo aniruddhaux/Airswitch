@@ -1,0 +1,348 @@
+/*
+::-moz-selection {
+	background:rgba(0,0,0,0);
+	}
+::selection { 
+	background:rgba(0,0,0,0);
+	} 	
+*/
+	
+body{ 
+  	margin:0; 
+ 	padding:0; 
+ 	font-family: Roboto;
+	color:#999;
+	}
+*{margin:0; padding:0; 
+}
+img,a{ border:none; outline:none;}
+a{ text-decoration:none;}
+ul,li{ list-style:none;}
+input, textarea, select{
+	outline:none;
+	}
+h1{ font-size:52px;}
+h2{ font-size:34px;}
+
+p{ 
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 23px;
+	}
+
+.alignleft{
+	float:left;
+	margin:0 10px 15px 0;
+	}
+.alignright{
+	float:right;
+	margin:0 0px 15px 10px;
+	}
+.aligncenter{
+	display:block;
+	margin:15px auto;
+	}
+
+.clear:after{
+	display:block;
+	clear:both;
+	content:'';
+	}
+.spacer10{ height:10px;}
+.spacer15{ height:15px;}
+.spacer20{ height:20px;}
+.spacer25{ height:25px;}
+.spacer30{ height:30px;}     
+.spacer40{ height:40px;}
+
+
+.boxSizing{
+	box-sizing:border-box;
+	}
+.wrapper{ 
+	width:1150px;
+	margin:0px auto;
+	position:relative;
+	}
+.wrapper:after{
+	clear:both;
+	display: block; 
+	content:'';
+	}
+/***************************
+	Header css start
+*****************************/
+header{
+	}
+
+
+
+	
+	
+/***********************/	
+.logo{
+	left: 50%;
+    margin: 0 0 0 -132px;
+    position: absolute;
+    top: 20%;
+    width: 264px;
+    z-index: 99;
+	}
+.logo img{
+	height: auto;
+    padding: 0;
+    vertical-align: bottom;
+    width: 100%;
+	}	
+.logoIcon {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 122px;
+    width: 100%;
+    z-index: 999;
+	}	
+.logoIcon img{
+	height: auto;
+    vertical-align: bottom;
+    width: auto;
+	}	
+
+
+
+
+
+/************************
+	Banner section css
+**************************/	
+.banner{
+    padding: 0 0 0px;
+	position:relative;
+	}
+.bannerBox:after{
+	clear: both;
+	display:block;
+	content:'';
+	}	
+.bannerBox {
+    overflow: hidden;
+	}	
+.dropArrow {
+    bottom: 0px;
+    left: 50%;
+    margin: 0 0 0 -49px;
+    position: absolute;
+    width: 98px;
+    z-index: 999;
+	}
+.dropArrow img{
+	vertical-align:bottom;
+	}
+.dropArrow2{
+	background: rgba(0, 0, 0, 0.45) url("../images/down.png") no-repeat scroll center center;
+    border-radius: 50%;
+    bottom: 10px;
+    box-sizing: border-box;
+    display: none;
+    height: 41px;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    width: 42px;
+    z-index: 999;
+	cursor:pointer;
+	}
+.dropArrow2.top{
+	background-image:url(../images/top.png);
+	}
+			
+.sliderLeft{
+	float:left;
+	width:50%;
+	position:relative;
+	}			
+.sliderRight{
+	float:right;
+	width:50%;
+	position:relative;
+	}			
+.caption{
+    bottom: 140px;
+    box-sizing: border-box;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+	z-index: 99;
+	}
+.caption h2{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,0d7484+50,0d7484+100&0+0,1+50,0+100 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(13,116,132,1) 50%, rgba(13,116,132,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(13,116,132,1) 50%,rgba(13,116,132,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(13,116,132,1) 50%,rgba(13,116,132,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000d7484',GradientType=1 ); /* IE6-9 */
+
+	color: #fff;
+    display: table;
+    float: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 0 30px 0 0;
+    padding: 15px 110px;
+    text-align: right;
+    text-transform: uppercase;
+    }
+.sliderRight .caption h2{
+	float:left !important;
+	margin-left:30px;
+	margin-left:0;
+	}
+
+.flex-control-nav li{
+    margin: 0 8px 0 0;
+	}
+.flex-control-nav li a{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    margin: 0;
+    transition: all 250ms ease 0s;
+    width: 15px;
+	}
+.flex-control-nav li .flex-active{
+    background: #000 none repeat scroll 0 0 !important;
+	}
+
+
+
+
+
+
+
+
+.content{
+    padding: 0 0 0px;
+	}
+.content h3{
+    color: #868585;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 300;
+    padding: 0 0 15px;
+    text-align: center;
+	}
+.content h3 span{
+	color: #0d7484;
+    display: inline-block;
+    font-weight: 900;
+    padding: 0 0 25px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+/**********************
+	Contact Us section css
+//////////////////*******/
+.conatctFrm_sec{
+	padding:56px 0;
+	}
+.row{
+	}
+.row input{
+	float: left;
+    margin: 0 1.5% 30px 0;
+    width: 32.2%;
+	}
+.row .last{
+	float:left;
+	margin-right:0;
+	}	
+.conatctFrm_sec input[type="text"]{
+	background: linear-gradient(#646464, #646464) no-repeat scroll left bottom / 1px 6px, linear-gradient(#646464, #646464) repeat-x scroll center bottom / 1px 1px, rgba(0, 0, 0, 0) linear-gradient(#646464, #646464) no-repeat scroll right bottom / 1px 6px;
+    border: medium none;
+    box-sizing: border-box;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 49px;
+    outline: medium none;
+    padding: 0 18px;
+	}
+.conatctFrm_sec textarea{
+	background: linear-gradient(#646464, #646464) no-repeat scroll left bottom / 1px 6px, linear-gradient(#646464, #646464) repeat-x scroll center bottom / 1px 1px, rgba(0, 0, 0, 0) linear-gradient(#646464, #646464) no-repeat scroll right bottom / 1px 6px;
+    border: medium none;
+    box-sizing: border-box;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    height: 73px;
+    line-height: 23px;
+    outline: medium none;
+    padding: 0 18px;
+    resize: vertical;
+    width: 100%;
+	}
+	
+.conatctFrm_sec input[type="text"]:hover,
+.conatctFrm_sec input[type="text"]:focus,
+.conatctFrm_sec textarea:hover,
+.conatctFrm_sec textarea:focus {
+    background: bottom left linear-gradient(#0d7484, #0d7484) no-repeat, bottom center linear-gradient(#0d7484, #0d7484) repeat-x, bottom right linear-gradient(#0d7484, #0d7484) no-repeat;
+    background-size: 1px 6px, 1px 1px, 1px 6px; 
+	}	
+.conatctFrm_sec input[type="submit"]{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid #0d7484;
+    border-radius: 35px;
+    color: #959393;
+    cursor: pointer;
+    display: table;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 45px;
+    margin: 45px auto 0px;
+    padding: 0 53px;
+    text-transform: uppercase;
+    transition: all 250ms ease 0s;
+	}
+.conatctFrm_sec input[type="submit"]:hover{
+    background:#0d7484;
+	color:#fff;
+	}
+
+
+
+
+
+
+/************************
+  footer part css 
+*****************************/	
+footer {
+	background:#0d7484;
+	}
+footer p{
+	color: #f2f2f2;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 22px 20px;
+    text-align: center;
+	}
